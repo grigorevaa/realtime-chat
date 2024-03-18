@@ -8,8 +8,8 @@ import Label from '../../ui/Label';
 import { useLogin } from './useLogin';
 
 function LoginForm() {
-  const [email, setEmail] = useState('text2@example.com');
-  const [password, setPassword] = useState('12341234');
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
   const { login, isLoading } = useLogin();
 
   function handleSubmit(e) {
